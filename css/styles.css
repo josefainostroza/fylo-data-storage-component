@@ -21,6 +21,174 @@ ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: aliceblue;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #0c122c;
+}
+@media screen and (width>768px) {
+  .background {
+    background-image: url(../assets/images/bg-desktop.png);
+    background-size: contain;
+    background-position: bottom center;
+  }
+}
+
+.flex-cards {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (width>768px) {
+  .flex-cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card {
+  width: 326px;
+  height: 201px;
+  border-radius: 10px 100px 10px 10px;
+  background-color: #1e2d69;
+  padding: 40px 108px 40px 41px;
+}
+@media screen and (width>768px) {
+  .card {
+    width: 350px;
+    height: 201px;
+  }
+}
+
+.logo {
+  width: 135.42px;
+  height: 40px;
+  margin-bottom: 33px;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  background-color: #0c122c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.card2 {
+  position: relative;
+  width: 326px;
+  height: 160px;
+  border-radius: 10px;
+  background-color: #1e2d69;
+  padding: 32px 32px 52px 32px;
+  margin-top: 16px;
+}
+@media screen and (width>768px) {
+  .card2 {
+    width: 540px;
+    height: 154px;
+    margin-left: 30px;
+    margin-top: 47px;
+  }
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #dbd9ff;
+}
+.text-text {
+  width: 228px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #dbd9ff;
+}
+.slider {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #0c122c;
+  padding: 3px;
+}
+
+.slider-color {
+  position: relative;
+  width: 80%;
+  height: 14px;
+  border-radius: 8px;
+  background-color: #ffa197;
+}
+.circle {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.gb1 {
+  position: absolute;
+  top: 94px;
+  left: 32px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #dbd9ff;
+}
+.gb2 {
+  position: absolute;
+  top: 94px;
+  right: 32px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #dbd9ff;
+}
+.flex-gb {
+  display: flex;
+  justify-content: space-evenly;
+}
+.number {
+  font-weight: 700;
+  font-size: 40px;
+  color: #0c122c;
+  margin: 0;
+}
+.gb-left {
+  font-weight: 700;
+  font-size: 12px;
+  color: #0c122c;
+}
+.card3 {
+  position: absolute;
+  top: 124px;
+  left: 74px;
+  width: 179px;
+  height: 72px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (width>768px) {
+  .card3 {
+    top: -47px;
+    left: 321px;
+  }
 }
